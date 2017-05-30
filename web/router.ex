@@ -11,6 +11,8 @@ defmodule GithubApp.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug :fetch_session
+    plug :fetch_flash
   end
 
   scope "/", GithubApp do
@@ -20,7 +22,8 @@ defmodule GithubApp.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", GithubApp do
-  #   pipe_through :api
-  # end
+  scope "/", GithubApp do
+    pipe_through :api
+    post "/webhook", PageController, :webhook
+  end
 end

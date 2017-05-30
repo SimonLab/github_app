@@ -4,4 +4,9 @@ defmodule GithubApp.PageController do
   def index(conn, _params) do
     render conn, "index.html"
   end
+
+  def webhook(conn, _params) do
+    IO.puts "new event received"
+    render conn, "webhook.html"
+  end
 end
