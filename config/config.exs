@@ -12,7 +12,7 @@ config :github_app,
 # Configures the endpoint
 config :github_app, GithubApp.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "c8LWswhVGy8BsE+DBuhR44CVkbCbWaQuIB0pcAJkLZIPAu5yCHDvqMd8XWoK6ZtZ",
+  secret_key_base: System.get_env("SECRET_KEY_BASE"),
   render_errors: [view: GithubApp.ErrorView, accepts: ~w(html json)],
   pubsub: [name: GithubApp.PubSub,
            adapter: Phoenix.PubSub.PG2]
