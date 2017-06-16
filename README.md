@@ -12,6 +12,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
 ## try merge conflict on this file
+a random line
+another random line
 
 Will this trigger a merge conflic?
 
