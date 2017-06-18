@@ -12,9 +12,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
 ## try merge conflict on this file
-
-Will this trigger a merge conflic?
-
+bb
+bWill this trigger a merge conflic?
+b
 ## You will Learn more
 
   * Official website: http://www.phoenixframework.org/
