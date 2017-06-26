@@ -1,4 +1,4 @@
-# GithubApp
+# GithubApp New PR
 
 To start your Phoenix app:
 
