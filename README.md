@@ -1,4 +1,4 @@
-# GithubApp New PR to be merged
+# GithubApp
 
 To start your Phoenix app:
 
