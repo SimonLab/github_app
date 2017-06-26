@@ -1,4 +1,4 @@
-# GithubApp
+# GithubApp merged
 
 To start your Phoenix app:
 
