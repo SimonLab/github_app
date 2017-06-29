@@ -4,7 +4,7 @@ defmodule GithubApp.Mixfile do
   def project do
     [app: :github_app,
      version: "0.0.1",
-     elixir: "~> 1.2",
+     elixir: "~> 1.4.2",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -19,7 +19,7 @@ defmodule GithubApp.Mixfile do
   def application do
     [mod: {GithubApp, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :joken, :jose, :httpoison]]
   end
 
   # Specifies which paths to compile per environment.
@@ -37,7 +37,10 @@ defmodule GithubApp.Mixfile do
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:joken, "~> 1.4.1"},
+     {:jose, "~> 1.8"},
+     {:httpoison, "~> 0.11.2"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
